@@ -43,6 +43,6 @@ export class HomePage implements OnInit {
     this.marker = marker(latLong);
     this.marker.addTo(this.map)
     .bindPopup('Hey, I\'m Here ');
-    this.map.setView(latLong);
+    this.map.setView(latLong, 15);
   }
 }
