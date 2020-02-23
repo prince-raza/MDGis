@@ -1,8 +1,9 @@
 <ion-app>
   <ion-menu side="start" menuId="m1">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-title>
+          <img alt="logo" height="40" src="img/Logo1.png" >
           MDGis
         </ion-title>
       </ion-toolbar>
@@ -10,6 +11,12 @@
 
     <ion-content>
       <ion-list>
+        <ion-menu-toggle menu="m1">
+          <ion-item lines="none" routerLink="/home">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Welcome to MDGis</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
         <ion-menu-toggle menu="m1">
           <ion-item lines="none" routerLink="/health-services">
             <ion-icon name="search" slot="start"></ion-icon>
